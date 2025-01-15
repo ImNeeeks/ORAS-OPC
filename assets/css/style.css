@@ -5,21 +5,30 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.7;
+    font-weight: bolder;
+
+    /* Background image settings */
+    background-image: url("/Users/nikko/Desktop/ORAS/Oras/assets/images/ORAS-background-image2.jpeg"); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    min-height: 100vh; /* Ensures the body takes up the entire viewport height */
 }
 
 header {
-    background-color: black;
-    color: white;
-    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.1); /* Transparent black background */
+    padding: 5px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .logo img {
-    height: 60px;
+    height: 100px;
     margin-left: 20px;
 }
 
@@ -30,38 +39,46 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: black;
+    text-decoration: underline;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #5ab95d;
+    color: rgb(1, 116, 1);
 }
 
 .content-section {
     padding: 50px;
-    text-align: center;
+    text-align: right;
+    font-weight: bold;
 }
 
 h1, h2 {
-    margin-bottom: 20px;
-    color: #333;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: rgb(1, 116, 1);
 }
 
 p {
     margin-bottom: 15px;
-    font-size: 1.1rem;
-    color: #555;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
 }
 
 ul {
     list-style: disc;
     margin-left: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 form {
@@ -95,7 +112,7 @@ form button:hover {
 }
 
 footer {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.1); /* Transparent black background */
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -103,3 +120,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
