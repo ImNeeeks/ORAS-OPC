@@ -5,92 +5,209 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 1.7;
-    font-weight: bolder;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
-    /* Background image settings */
-    background-image: url("/Users/nikko/Desktop/ORAS/Oras/assets/images/ORAS-background-image2.jpeg"); /* Path to your background image */
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
-    min-height: 100vh; /* Ensures the body takes up the entire viewport height */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0); /* Transparent black background */
-    padding: 5px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
 }
 
 .logo img {
-    height: 70px;
-    margin-left: 80px;
-    margin-top: 10px;
+    height: 120px;
+    margin-top: 20px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin-right: 20px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin-left: 35px;
+    padding-bottom: 20px;
 }
 
 nav ul li a {
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 nav ul li a:hover {
-    color: rgb(1, 116, 1);
-}
-
-.content-section {
-    padding: 50px;
-    text-align: right;
-    font-weight: bold;
-}
-
-h1, h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: underline;
-    margin-bottom: 10px;
-    color: rgb(1, 116, 1);
-    text-shadow: 2px 2px 2px rgba(14, 14, 14, 0.3);
+    color: #017801;
 }
 
-p {
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
-    text-align: right;
+nav ul li .btn {
+    background-color: #151515;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
 }
 
-ul {
-    list-style: disc;
-    margin-left: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.2rem;
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.1); /* Transparent black background */
-    color: white;
+#hero {
+    background: url('/assets/images/5497968.jpeg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 20px 0;
+    color: #fff;
     position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
+#hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hero .hero-content {
+    z-index: 1;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #017801;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#services {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+.join-us h2 {
+    text-align: center;
+}
+
+.join-us p {
+    padding-bottom: 30px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #017801;
+    color: #f5f2f2;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.footer-col {
+    width: 22%;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #080807;
+    text-decoration: overline;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #060606;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
