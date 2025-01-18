@@ -57,7 +57,7 @@ nav ul li .btn {
 }
 
 #hero {
-    background: url('/assets/images/5497968.jpeg') no-repeat center center/cover;
+    background: url('/assets/images/HERO-section-BG.jpeg') no-repeat center center/cover;
     height: 500px;
     display: flex;
     align-items: center;
@@ -202,10 +202,10 @@ footer {
 }
 
 .footer-bottom {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .footer-bottom p {
