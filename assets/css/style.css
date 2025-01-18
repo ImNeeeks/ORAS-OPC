@@ -1,3 +1,4 @@
+/* Global styles for all screen sizes */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #333;
 }
 
@@ -19,6 +20,8 @@ body {
 header {
     background-color: rgba(0, 0, 0, 0.5);
     padding-bottom: 20px;
+    position: relative;
+    z-index: 10;
 }
 
 .logo img {
@@ -65,6 +68,7 @@ nav ul li .btn {
     text-align: center;
     color: #fff;
     position: relative;
+    padding-top: 80px; /* Adds space from the top to avoid overlap with header */
 }
 
 #hero:before {
@@ -112,7 +116,8 @@ nav ul li .btn {
 
 .service-grid {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .service-item {
@@ -121,6 +126,8 @@ nav ul li .btn {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .service-item img {
@@ -141,10 +148,13 @@ nav ul li .btn {
 
 .join-us h2 {
     text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .join-us p {
     padding-bottom: 30px;
+    font-size: 16px;
 }
 
 /* Footer styles */
@@ -160,10 +170,12 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px 20px;
+    flex-wrap: wrap;
 }
 
 .footer-col {
     width: 22%;
+    margin-bottom: 20px;
 }
 
 .footer-col h4 {
@@ -210,4 +222,182 @@ footer {
 
 .footer-bottom p {
     font-size: 14px;
+}
+
+/* Media Queries */
+
+/* Tablet and smaller screens */
+@media (max-width: 1024px) {
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    #hero {
+        height: 400px;
+        padding-top: 80px; /* Keeps enough padding */
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    .service-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Mobile Phones (Portrait) */
+@media (max-width: 768px) {
+    #hero {
+        height: 300px;
+        padding-top: 60px; /* Adjust the padding for mobile screens */
+    }
+
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .service-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .join-us p {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Small Mobile Phones (Portrait) */
+@media (max-width: 480px) {
+    header {
+        padding-bottom: 10px;
+    }
+
+    .logo img {
+        height: 80px;
+        padding-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0px;
+    }
+
+    #hero {
+        height: 300px;
+        padding-top: 150px; /* Adjust padding to prevent content cut-off */
+        padding-bottom: 240px;
+    }
+
+    #hero h1 {
+        font-size: 20px; /* Make the font size smaller to fit better */
+        margin-top: 150px;
+    }
+
+    #hero p {
+        font-size: 14px; /* Adjust paragraph size for small screens */
+    }
+
+    .cta-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .join-us {
+        padding: 10px;
+    }
+
+    .join-us h2 {
+        font-size: 20px; /* Smaller header for mobile */
+    }
+
+    .join-us p {
+        font-size: 12px; /* Smaller font for better mobile readability */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
 }
