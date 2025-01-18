@@ -290,16 +290,17 @@ footer {
     }
 
     #hero h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     #hero p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .cta-btn {
         font-size: 14px;
         padding: 10px 20px;
+
     }
 
     .service-item {
@@ -354,12 +355,93 @@ footer {
     }
 
     #hero h1 {
-        font-size: 20px; /* Make the font size smaller to fit better */
+        font-size: 17px; /* Make the font size smaller to fit better */
         margin-top: 150px;
+    }
+
+    #hero h2 {
+        font-size: 17px;
     }
 
     #hero p {
         font-size: 14px; /* Adjust paragraph size for small screens */
+    }
+
+    .cta-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .join-us {
+        padding: 10px;
+    }
+
+    .join-us h2 {
+        font-size: 20px; /* Smaller header for mobile */
+    }
+
+    .join-us p {
+        font-size: 12px; /* Smaller font for better mobile readability */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
+
+/* Smaller Mobile Phones (Portrait) */
+@media (max-width: 360px) {
+    header {
+        padding-bottom: 10px;
+    }
+
+    .logo img {
+        height: 80px;
+        padding-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0px;
+    }
+
+    #hero {
+        height: 300px;
+        padding-top: 150px; /* Adjust padding to prevent content cut-off */
+        padding-bottom: 240px;
+    }
+
+    #hero h1 {
+        font-size: 15px; /* Make the font size smaller to fit better */
+        margin-top: 150px;
+    }
+
+    #hero p {
+        font-size: 12px; /* Adjust paragraph size for small screens */
     }
 
     .cta-btn {
