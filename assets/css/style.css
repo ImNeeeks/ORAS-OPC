@@ -231,6 +231,7 @@ footer {
     nav ul {
         justify-content: center;
         flex-wrap: wrap;
+        margin-top: 20px;
     }
 
     nav ul li {
